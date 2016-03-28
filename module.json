@@ -1,0 +1,42 @@
+{
+  "name": "sal-stack-atmel",
+  "version": "1.0.0",
+  "description": "Atmel Socket Interface",
+  "keywords": [
+    "network",
+    "sockets",
+    "mbed",
+    "mbed-official"
+  ],
+  "author": "~@atmel.com",
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0",
+      "type": "Apache-2.0"
+    }
+  ],
+  "extraIncludes": [
+    "sal-stack-atmel"
+  ],
+  "dependencies": {
+    "sal": "^1.1.2",
+    "core-util" : "^1.5.0"
+  },
+  "targetDependencies": {
+    "winc1500": {
+      "sal-driver-atmel-winc1500": "^1.0.0"
+    }
+  },
+  "testDependencies": {
+    "mbed-drivers": "^1.0.0"
+  },
+  "scripts": {
+    "testReporter": [
+      "mbedgt",
+      "--digest",
+      "stdin",
+      "-v",
+      "-V"
+    ]
+  }
+}
